@@ -36,11 +36,11 @@ class Headphones(object):
         """
         self.__model = model
 
-    def playedMusic(song):  
+    def playedMusic(self, song):  
         """
         @param song String: The song that is played through the headphones
         """
-        print("The song that was played is " + song)
+        print("You hear", str(song), "play through your", self.__model, "headphones.")
         
     def __str__(self):
         """

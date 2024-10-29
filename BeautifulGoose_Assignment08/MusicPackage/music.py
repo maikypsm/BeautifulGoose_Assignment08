@@ -16,22 +16,15 @@ class Music(object):
     """
     Model of different genres of music, artist, and song name
     """
-    def __init__(self, genre, artist, name): 
+    def __init__(self, artist, name): 
         """
         Constructor
-        @param genre String: The genre of music being listened to.
         @param artist String: The artist of song being listened to.  
         @param name String: The name of the song being listened to.  
         """
-        self.__genre = genre
-        self.__artist = artist
-        self.__name = name
+        self.artist = artist
+        self.name = name
         
-    def get_genre(self): 
-        """
-        @return String: The genre of the current object
-        """
-        return self.__genre
 
     def get_artist(self): 
         """
@@ -45,12 +38,6 @@ class Music(object):
         """
         return self.name
     
-    def set_genre(self, genre):
-        """
-        Assign a value to the genre of the current object
-        @param model String: The genre to be assigned.
-        """
-        self.__genre = genre
 
     def set_artist(self, artist):
         """
@@ -71,15 +58,15 @@ class Music(object):
         @param song String: 
         """
         print("The genre of song that was played is " + song)
-        
+
     def __str__(self):
         """
-        @return String: A human-readable basic representation of the current object. 
+        @return String: a string of the attributes of the current object
         """
-        return "Song: " + self.__artist + " " + self.__name + " "  + self.__genre
+        return f"{self.name} by {self.artist}"
 
     def __repr__(self):
         """
         @return String: A string containing code that can be executed to create a copy of the current object
         """
-        return f"This song is ('{self.__genre}', {self.__artist}, {self.__name})"
+        return f"This song is ({self.__name} by {self.__artist})"
