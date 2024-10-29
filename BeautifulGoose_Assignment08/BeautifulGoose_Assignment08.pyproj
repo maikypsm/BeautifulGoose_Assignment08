@@ -21,14 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1Package\class1.py">
+    <Compile Include="MusicPackage\music.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Class1Package\__init__.py">
+    <Compile Include="MusicPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Class2Package\class2.py" />
-    <Compile Include="Class2Package\__init__.py">
+    <Compile Include="HeadphonesPackage\headphones.py" />
+    <Compile Include="HeadphonesPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py" />
@@ -37,8 +37,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Class1Package\" />
-    <Folder Include="Class2Package\" />
+    <Folder Include="MusicPackage\" />
+    <Folder Include="HeadphonesPackage\" />
     <Folder Include="mainPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

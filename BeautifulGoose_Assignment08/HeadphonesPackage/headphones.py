@@ -1,5 +1,16 @@
+# headphones.py
 
+# Name: Sarah Mahan, Joshua Klingelhafer, Lucas Ransick
+# email:  mahansa@mail.uc.edu, klingejh@mail.uc.edu, ransiclg@mail.uc.edu
+# Assignment Number: Assignment 08
+# Due Date:  10/31
+# Course #/Section:   IS4010 001
+# Semester/Year:   Fall 2024
+# Brief Description of the assignment:  Creating two class objects and testing their methods.
 
+# Brief Description of what this module does: The module for the Headphones class
+# Citations:
+# Anything else that's relevant:
 
 class Headphones(object):
     """
