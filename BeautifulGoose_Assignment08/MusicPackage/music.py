@@ -22,26 +22,26 @@ class Music(object):
         @param artist String: The artist of song being listened to.  
         @param name String: The name of the song being listened to.  
         """
-        self.artist = artist
-        self.name = name
+        self.__artist = artist
+        self.__name = name
     
     def get_Music(self):
         """
         @return string: the artist and name of the song
         """
-        return f"{self.name} {self.artist}"
+        return f"{self.__name} {self.__artist}"
 
     def get_artist(self): 
         """
         @return String: The artist of the current object
         """
-        return self.artist
+        return self.__artist
 
     def get_name(self): 
         """
         @return String: The name of the current object
         """
-        return self.name
+        return self.__name
     
 
     def set_artist(self, artist):
@@ -49,29 +49,29 @@ class Music(object):
         Assign a value to the artist of the current object
         @param model String: The artist to be assigned.
         """
-        self.artist = artist
+        self.__artist = artist
 
     def set_name(self, name):
         """
         Assign a value to the name of the current object
         @param model String: The name to be assigned.
         """
-        self.name = name
+        self.__name = name
 
     def jamOut(self):  
         """
         @param self String: 
         """
-        print("\n♫♫ This song,", self.name,", is so groovy! ♪♫", self.artist, "made a great song! ♪♫")
+        print("\n♫♫ This song,", self.__name,", is so groovy! ♪♫", self.__artist, "made a great song! ♪♫")
 
     def __str__(self):
         """
         @return String: a string of the attributes of the current object
         """
-        return f"{self.name} by {self.artist}"
+        return f"{self.__name} by {self.__artist}"
 
     def __repr__(self):
         """
         @return String: A string containing code that can be executed to create a copy of the current object
         """
-        return f"Song({self.artist}, {self.name})"    
+        return f"Music('{self.__artist}','{self.__name}')"    

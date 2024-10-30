@@ -16,7 +16,7 @@
 from HeadphonesPackage.headphones import *
 from MusicPackage.music import *
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
     """
     This tests the functionality of the Headphones and Music classes."
     """
@@ -82,11 +82,15 @@ if __name__ == "__main__":
 
     # Let's get silly - Test against a list
 
-    """
+    print("\n*************Let's get SILLY*************")
+
+    print("I want to hear a playlist!")
     myArtists = ["Journey", "Migos", "Amerie"]
     mySongNames = ["Don't Stop Believin'", "Stir Fry", "1 Thing"]
     myPlaylist = []
-    for x in range():
+    for x in range(len(mySongNames)):
         newSong = Music(myArtists[x], mySongNames[x])
         myPlaylist.append(newSong)
-    """
+
+    for song in myPlaylist:
+        speakers.playedMusic(song.__str__())
