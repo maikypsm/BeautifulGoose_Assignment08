@@ -24,13 +24,18 @@ class Music(object):
         """
         self.artist = artist
         self.name = name
-        
+    
+    def get_Music(self):
+        """
+        @return string: the artist and name of the song
+        """
+        return f"{self.name} {self.artist}"
 
     def get_artist(self): 
         """
         @return String: The artist of the current object
         """
-        return self.__artist
+        return self.artist
 
     def get_name(self): 
         """
@@ -44,20 +49,20 @@ class Music(object):
         Assign a value to the artist of the current object
         @param model String: The artist to be assigned.
         """
-        self.__artist = artist
+        self.artist = artist
 
     def set_name(self, name):
         """
         Assign a value to the name of the current object
         @param model String: The name to be assigned.
         """
-        self.__name = name
+        self.name = name
 
-    def musicType(song):  
+    def jamOut(self):  
         """
-        @param song String: 
+        @param self String: 
         """
-        print("The genre of song that was played is " + song)
+        print("\n♫♫ This song,", self.name,", is so groovy! ♪♫", self.artist, "made a great song! ♪♫")
 
     def __str__(self):
         """
@@ -69,4 +74,4 @@ class Music(object):
         """
         @return String: A string containing code that can be executed to create a copy of the current object
         """
-        return f"This song is ({self.__name} by {self.__artist})"
+        return f"Song({self.artist}, {self.name})"    

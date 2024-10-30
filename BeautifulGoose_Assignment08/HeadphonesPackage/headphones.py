@@ -1,4 +1,4 @@
-# headphones.py
+﻿# headphones.py
 
 # Name: Sarah Mahan, Joshua Klingelhafer, Lucas Ransick
 # email:  mahansa@mail.uc.edu, klingejh@mail.uc.edu, ransiclg@mail.uc.edu
@@ -40,7 +40,7 @@ class Headphones(object):
         """
         @param song String: The song that is played through the headphones
         """
-        print("You hear", str(song), "play through your", self.__model, "headphones.")
+        print("\n♪ You hear", str(song), "play through your", self.__model, "headphones. ♪")
         
     def __str__(self):
         """
